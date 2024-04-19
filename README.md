@@ -18,7 +18,8 @@ Como Usar
 
 bash
 
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/Enmersonpassos/Zabbix-Grafana-Docker.git
+
 cd nome-do-repositorio
 
     Certifique-se de que o Docker está em execução em sua máquina.
