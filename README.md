@@ -19,7 +19,7 @@ Como Usar
 
 bash
 
-git clone https://github.com/Enmersonpassos/Zabbix-Grafana-Docker.git
+git clone https://github.com/Enmersonpassos/zabbix-grafana-docker.git
 
 cd nome-do-repositorio
 
