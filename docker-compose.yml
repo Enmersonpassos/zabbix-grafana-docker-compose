@@ -29,6 +29,7 @@ services:
       MYSQL_PASSWORD: zabbix
       MYSQL_ROOT_PASSWORD: YjA0OTYwZDBiN2EwNWFjMTRjZGU3Yjcy
       ZBX_JAVAGATEWAY: zabbix-java-gateway
+      ZBX_HTTPTRAPPERMODE: 1  # Habilitar suporte a HTTP trapper
     ports:
       - '10051:10051'  # Porta padrão para comunicação com agentes Zabbix
     volumes:
@@ -71,4 +72,5 @@ services:
       - '3000:3000'  # Porta padrão para acesso ao Grafana
     environment:
       GF_INSTALL_PLUGINS: alexanderzobnin-zabbix-app  # Instalação do plugin Zabbix App
+      GF_SECURITY_ALLOW_EMBEDDING: "true"  # Permitir incorporação de gráficos do Grafana
     restart: unless-stopped
